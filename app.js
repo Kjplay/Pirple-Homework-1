@@ -1,4 +1,4 @@
-/* HOMEWORK ASSIGMENT #1
+/* HOMEWORK ASSIGNMENT #1
  * Main app file
  * Returns a message on the "hello" route
  * Author: Jakub Jaruszewski
