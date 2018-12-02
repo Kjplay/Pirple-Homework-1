@@ -92,7 +92,7 @@ handlers.notFound = function(data, callback) {
 };
 //hello handler
 handlers.hello = function(data, callback) {
-	var name = typeof data.query.name == "string" ? data.query.name : "new user";
+	var name = typeof data.query["name"] == "string" ? data.query["name"] : "new user";
 	var message = "Hi "+name+"!";
 	callback(200, {"message": message}, {"Question": "Will you find me? I'm a riddle!"});
 }
