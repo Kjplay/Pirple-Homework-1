@@ -105,7 +105,7 @@ handlers.riddle = function(data, callback) { //do not cheat!
 	if (answer.toLowerCase() == "towel") payload["message"] = "Congrats! :) You solved it!"; //I told you!
 	callback(200, payload);
 };
-//Nevermind. It's me!
+//Nevermind. I did.
 handlers.tongue = function(data, callback) { //random Polish tongue twister
 	var num = typeof data.query["number"] == "string" ? data.query["number"].parseInt() : -1;
 	var tongueTwister = tg(num);
