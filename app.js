@@ -108,7 +108,7 @@ handlers.riddle = function(data, callback) { //do not cheat!
 //Nevermind. I did.
 handlers.tongue = function(data, callback) { //random Polish tongue twister
 	var num = typeof data.query["number"] == "string" ? parseInt(data.query["number"]) : -1;
-	var tongueTwister = tg(num);
+	var tongueTwister = tg(num-1);
 	callback(200, {"tongue-Twister": tongueTwister});
 };
 //Define the router
