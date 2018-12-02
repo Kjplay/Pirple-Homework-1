@@ -1,5 +1,5 @@
 /* HOMEWORK ASSIGMENT #1
- * Main api file
+ * Main app file
  * Returns a message on the "hello" route
  * Author: Jakub Jaruszewski
  */
@@ -95,7 +95,7 @@ handlers.hello = function(data, callback) {
 	var name = typeof data.query["name"] == "string" ? data.query["name"] : "new user";
 	var message = "Hi "+name+"!";
 	callback(200, {"message": message}, {"Question": "Will you find me? I'm a riddle!"});
-}
+};
 //I don't know who did this
 handlers.riddle = function(data, callback) { //do not cheat!
 	var payload = {
@@ -107,7 +107,7 @@ handlers.riddle = function(data, callback) { //do not cheat!
 };
 //Nevermind. I did.
 handlers.tongue = function(data, callback) { //random Polish tongue twister
-	var num = typeof data.query["number"] == "string" ? data.query["number"].parseInt() : -1;
+	var num = typeof data.query["number"] == "string" ? parseInt(data.query["number"]) : -1;
 	var tongueTwister = tg(num);
 	callback(200, {"tongue-Twister": tongueTwister});
 };
