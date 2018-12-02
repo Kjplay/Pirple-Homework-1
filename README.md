@@ -4,7 +4,7 @@
 * Ports in "production" environment: 4000 for HTTP and 4001 for HTTPS.
 * If route doesn't have a handler it will return an empty obejct with 404 status.
 ## 2."/hello" route
-1. Returns a "Hi" message in a JSON format.
+1. Returns a "Hi" message in JSON format.
 2. You can provide your name in queryString as "name" (ex. "?name=Joe").
 ## 3. "/riddle" route
 1. Returns a riddle in JSON format.
