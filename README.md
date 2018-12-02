@@ -12,6 +12,6 @@
 3. If you answer correctly, it will return a message.
 ## 4. "/tonguetwister" route
 1. Returns a random Polish tongue twister in JSON format.
-2. You can choose a one by the queryString (ex. "?number=1").
+2. You can choose a one by the queryString (ex. "?number=1")
 3. If your number will be too high or too low it will return a random tongue twister.
 ### Thank you!
