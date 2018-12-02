@@ -1,5 +1,5 @@
 /* HOMEWORK ASSIGMENT #1
- * Main app file
+ * Main api file
  * Returns a message on the "hello" route
  * Author: Jakub Jaruszewski
  */
