@@ -2,6 +2,7 @@
 ## 1. Port and config
 * Runs a HTTP server on 2000 port and HTTPS server on 2001 port by default. (staging environment)
 * Ports in "production" environment: 4000 for HTTP and 4001 for HTTPS.
+* If route doesn't have a handler it will return an empty obejct with 404 status.
 ## 2."/hello" route
 1. Returns a "Hi" message as a JSON.
 2. You can provide your name in queryString as "name" (ex. "?name="Joe").
