@@ -12,7 +12,7 @@ var fs = require("fs");
 var config = require("./config");
 var tg = require("./tg");
 //Log the server start with environment name
-console.log("Server starting in "+config.envName+" environment!");
+console.log("Server is starting in "+config.envName+" environment!");
 //Instantiate the HTTP server
 var httpServer = http.createServer(function(req, res) {
 	serverLogic(req, res);
